@@ -181,6 +181,6 @@ Alle Buttons verwenden `font-family: Barlow`, `font-weight: 600`, `font-size: 0.
 
 | Name | Breite | Verhalten |
 | :--- | :--- | :--- |
-| Desktop | > 900px | Mehrspaltige Grids, Side-by-Side Layouts |
-| Tablet | 600–900px | Reduzierte Spalten­anzahl |
-| Mobile | < 600px | Einspaltig, gestapelte Layouts |
+| Desktop | > 930px | Mehrspaltige Grids, Side-by-Side Layouts |
+| Tablet | 710–930px | Reduzierte Spalten­anzahl |
+| Mobile | < 710px | Einspaltig, gestapelte Layouts |
