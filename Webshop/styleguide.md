@@ -4,6 +4,30 @@ Design Direction: **Organic editorial · forest-ink palette**
 
 ---
 
+## 0. Logo
+
+Das Logo besteht aus zwei rein typografischen Elementen — kein Bildzeichen.
+
+| Element | Text | Schrift | Gewicht | Grösse | Farbe | Besonderheit |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `.logo-main` | `Brandis` | Playfair Display | 900 | `1.5rem` | `--clr-bark` (`#2c1f0f`) | `letter-spacing: -0.02em` |
+| `.logo-sub` | `Shop` | Barlow | 500 | `0.7rem` | `--clr-moss` (`#3d5a2a`) | Grossbuchstaben, `letter-spacing: 0.1em`, unten bündig |
+
+**Struktur:**
+
+```html
+<a href="#" class="logo">
+  <span class="logo-main">Brandis</span><span class="logo-sub">Shop</span>
+</a>
+```
+
+**Verwendungsregeln:**
+- Das Logo erscheint ausschliesslich als verlinktes `<a>`-Element mit `aria-label="Brandis-Shop – Startseite"`
+- Mindestgrösse: `logo-main` nicht unter `1.2rem` skalieren
+- Kein Bildersatz, keine Outline, kein Schatten
+
+---
+
 ## 1. Typografie
 
 ### Schriftfamilien
