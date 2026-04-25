@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produkte – Brandis-Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Brandis-Shop – Startseite">
+        <span class="logo-main">Brandis</span><span class="logo-sub">Shop</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Hauptnavigation">
+        <a href="index.html" class="logo sidebar-logo" aria-label="Brandis-Shop – Startseite">
+          <span class="logo-main">Brandis</span><span class="logo-sub">Shop</span>
+        </a>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="produkte.html" class="nav-link active">Produkte</a></li>
+          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" aria-label="Warenkorb">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" aria-label="0 Artikel im Warenkorb">0</span>
+        </button>
+        <button class="burger-btn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero" aria-label="Produktübersicht">
+      <div class="container">
+        <p class="page-hero__kicker">Shop</p>
+        <h1 class="page-hero__title">Alle Produkte</h1>
+        <p class="page-hero__sub">Bücher, Merchandise und mehr aus den Welten von Katja Brandis.</p>
+      </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="section products-section" aria-labelledby="shop-heading">
+      <div class="container">
+
+        <!-- Filter Pills -->
+        <div class="filter-bar" role="group" aria-label="Kategorie-Filter">
+          <button class="filter-pill active" data-filter="alle">Alle</button>
+          <button class="filter-pill" data-filter="woodwalkers">Woodwalkers</button>
+          <button class="filter-pill" data-filter="seawalkers">Seawalkers</button>
+          <button class="filter-pill" data-filter="windwalkers">Windwalkers</button>
+        </div>
+
+        <h2 id="shop-heading" class="visually-hidden">Produktkatalog</h2>
+
+        <ul class="product-grid product-grid--4col" role="list">
+
+          <!-- Woodwalkers 1 -->
+          <li class="product-card" data-category="woodwalkers" role="listitem">
+            <article>
+              <a href="produkt-detail.html" class="product-card__image-link" aria-label="Carags Verwandlung – Produktseite">
+                <div class="product-card__cover" aria-hidden="true">
+                  <div class="cover-placeholder cover-placeholder--wood">
+                    <span>Woodwalkers</span>
+                  </div>
+                </div>
+              </a>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Carags Verwandlung</h3>
+                <p class="product-card__series">Woodwalkers · Band 1</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
+                  <button class="btn btn--cart" aria-label="Carags Verwandlung in den Warenkorb legen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Kaufen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Woodwalkers 2 -->
+          <li class="product-card" data-category="woodwalkers" role="listitem">
+            <article>
+              <a href="produkt-detail.html" class="product-card__image-link" aria-label="Gefährliche Gestalt – Produktseite">
+                <div class="product-card__cover" aria-hidden="true">
+                  <div class="cover-placeholder cover-placeholder--wood">
+                    <span>Woodwalkers</span>
+                  </div>
+                </div>
+              </a>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Gefährliche Gestalt</h3>
+                <p class="product-card__series">Woodwalkers · Band 2</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
+                  <button class="btn btn--cart" aria-label="Gefährliche Gestalt in den Warenkorb legen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Kaufen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Woodwalkers 3 -->
+          <li class="product-card" data-category="woodwalkers" role="listitem">
+            <article>
+              <a href="produkt-detail.html" class="product-card__image-link" aria-label="Felsenclans Geheimnis – Produktseite">
+                <div class="product-card__cover" aria-hidden="true">
+                  <div class="cover-placeholder cover-placeholder--wood">
+                    <span>Woodwalkers</span>
+                  </div>
+                </div>
+              </a>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Felsenclans Geheimnis</h3>
+                <p class="product-card__series">Woodwalkers · Band 3</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
+                  <button class="btn btn--cart" aria-label="Felsenclans Geheimnis in den Warenkorb legen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Kaufen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Seawalkers 1 -->
+          <li class="product-card" data-category="seawalkers" role="listitem">
+            <article>
+              <a href="produkt-detail.html" class="product-card__image-link" aria-label="Verwandlung im Sturm – Produktseite">
+                <div class="product-card__cover" aria-hidden="true">
+                  <div class="cover-placeholder cover-placeholder--sea">
+                    <span>Seawalkers</span>
+                  </div>
+                </div>
+              </a>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Verwandlung im Sturm</h3>
+                <p class="product-card__series">Seawalkers · Band 1</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
+                  <button class="btn btn--cart" aria-label="Verwandlung im Sturm in den Warenkorb legen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Kaufen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Seawalkers 2 -->
+          <li class="product-card" data-category="seawalkers" role="listitem">
+            <article>
+              <a href="produkt-detail.html" class="product-card__image-link" aria-label="Haie im Sturm – Produktseite">
+                <div class="product-card__cover" aria-hidden="true">
+                  <div class="cover-placeholder cover-placeholder--sea">
+                    <span>Seawalkers</span>
+                  </div>
+                </div>
+              </a>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Haie im Sturm</h3>
+                <p class="product-card__series">Seawalkers · Band 2</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
+                  <button class="btn btn--cart" aria-label="Haie im Sturm in den Warenkorb legen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Kaufen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Windwalkers 1 -->
+          <li class="product-card" data-category="windwalkers" role="listitem">
+            <article>
+              <a href="produkt-detail.html" class="product-card__image-link" aria-label="Sturm und Flügel – Produktseite">
+                <div class="product-card__cover" aria-hidden="true">
+                  <div class="cover-placeholder cover-placeholder--wind">
+                    <span>Windwalkers</span>
+                  </div>
+                </div>
+              </a>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Sturm und Flügel</h3>
+                <p class="product-card__series">Windwalkers · Band 1</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
+                  <button class="btn btn--cart" aria-label="Sturm und Flügel in den Warenkorb legen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                    Kaufen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="newsletter__inner">
+          <div class="newsletter__text">
+            <h2 id="newsletter-heading">Bleib auf dem Laufenden</h2>
+            <p>Erhalte Neuigkeiten zu Büchern, Events und exklusiven Fan-Angeboten direkt in dein Postfach.</p>
+          </div>
+          <div class="newsletter__form-wrap">
+            <div class="newsletter__form" role="form" aria-label="Newsletter-Anmeldung">
+              <div class="form-field">
+                <label for="nl-name">Vorname</label>
+                <input type="text" id="nl-name" name="vorname" placeholder="Dein Name" autocomplete="given-name" />
+              </div>
+              <div class="form-field">
+                <label for="nl-email">E-Mail</label>
+                <input type="email" id="nl-email" name="email" placeholder="deine@email.de" autocomplete="email" required />
+              </div>
+              <button type="button" class="btn btn--primary" id="nl-submit">Abonnieren</button>
+            </div>
+            <p class="newsletter__note" role="status" aria-live="polite" id="nl-status"></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Katja Brandis Fan-Shop</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
