@@ -1,14 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt & Team – Brandis-Shop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
 </head>
+
 <body>
 
   <!-- ========== HEADER / NAV ========== -->
@@ -22,19 +27,27 @@
         <a href="index.html" class="logo sidebar-logo" aria-label="Brandis-Shop – Startseite">
           <span class="logo-main">Brandis</span><span class="logo-sub">Shop</span>
         </a>
-        <ul>
+        
+        <button class="sidebar-close" aria-label="Menü schließen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+<ul>
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="produkte.html" class="nav-link">Produkte</a></li>
-          <li><a href="kontakt.html" class="nav-link active">Kontakt</a></li>
+          <li><a href="products.html" class="nav-link">Produkte</a></li>
+          <li><a href="contact.html" class="nav-link active">Kontakt</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
         <button class="cart-btn" aria-label="Warenkorb">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
           </svg>
           <span class="cart-count" aria-label="0 Artikel im Warenkorb">0</span>
         </button>
@@ -46,6 +59,8 @@
 
   </header>
 
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
   <main>
 
     <!-- ========== PAGE HERO ========== -->
@@ -53,7 +68,8 @@
       <div class="container">
         <p class="page-hero__kicker">Hallo!</p>
         <h1 class="page-hero__title">Kontakt & Team</h1>
-        <p class="page-hero__sub">Fragen zu Büchern, Bestellungen oder einfach ein nettes Hallo – wir freuen uns von dir zu hören.</p>
+        <p class="page-hero__sub">Fragen zu Büchern, Bestellungen oder einfach ein nettes Hallo – wir freuen uns von dir
+          zu hören.</p>
       </div>
     </section>
 
@@ -70,7 +86,8 @@
               <div class="section-rule" style="margin-left:0;"></div>
             </header>
 
-            <p class="team-intro">Wir sind leidenschaftliche Fans der Wandler-Welt und sorgen dafür, dass deine Bücher und Merchandise sicher bei dir ankommen.</p>
+            <p class="team-intro">Wir sind leidenschaftliche Fans der Wandler-Welt und sorgen dafür, dass deine Bücher
+              und Merchandise sicher bei dir ankommen.</p>
 
             <ul class="team-list" role="list">
               <li class="team-member" role="listitem">
@@ -108,7 +125,8 @@
 
             <div class="form-group">
               <label for="ct-email">E-Mail</label>
-              <input type="email" id="ct-email" name="email" placeholder="deine@email.de" autocomplete="email" required />
+              <input type="email" id="ct-email" name="email" placeholder="deine@email.de" autocomplete="email"
+                required />
             </div>
 
             <div class="form-group">
@@ -128,7 +146,8 @@
               <textarea id="ct-message" name="message" placeholder="Deine Nachricht…"></textarea>
             </div>
 
-            <button type="button" class="btn btn--primary" id="ct-submit" style="width:100%; justify-content:center;">Nachricht senden</button>
+            <button type="button" class="btn btn--primary" id="ct-submit"
+              style="width:100%; justify-content:center;">Nachricht senden</button>
             <p class="form-status" role="status" aria-live="polite" id="ct-status"></p>
           </div>
 
@@ -147,6 +166,38 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+    <aside class="cart-sidebar" aria-label="Warenkorb" aria-hidden="true">
+    <div class="cart-sidebar__header">
+      <h2 class="cart-sidebar__title">Warenkorb</h2>
+      <button class="cart-sidebar__close" aria-label="Warenkorb schließen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <ul class="cart-sidebar__items" role="list"></ul>
+    <p class="cart-sidebar__empty">Dein Warenkorb ist leer.</p>
+    <div class="cart-sidebar__footer">
+      <div class="cart-sidebar__total">
+        <span>Gesamt</span>
+        <span class="cart-sidebar__total-price">0,00 CHF</span>
+      </div>
+      <button class="btn btn--primary cart-sidebar__checkout">Zur Kasse</button>
+    </div>
+  </aside>
+  <div class="cart-backdrop" aria-hidden="true"></div>
+<script src="../js/main.js"></script>
+  <script src="../js/contact.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+

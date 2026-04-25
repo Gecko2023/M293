@@ -1,14 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brandis-Shop – Woodwalkers · Seawalkers · Windwalkers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/index.css" />
 </head>
+
 <body>
 
   <!-- ========== HEADER / NAV ========== -->
@@ -22,19 +27,27 @@
         <a href="index.html" class="logo sidebar-logo" aria-label="Brandis-Shop – Startseite">
           <span class="logo-main">Brandis</span><span class="logo-sub">Shop</span>
         </a>
-        <ul>
+        
+        <button class="sidebar-close" aria-label="Menü schließen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+<ul>
           <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="produkte.html" class="nav-link">Produkte</a></li>
-          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+          <li><a href="products.html" class="nav-link">Produkte</a></li>
+          <li><a href="contact.html" class="nav-link">Kontakt</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
         <button class="cart-btn" aria-label="Warenkorb">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
           </svg>
           <span class="cart-count" aria-label="0 Artikel im Warenkorb">0</span>
         </button>
@@ -46,14 +59,16 @@
 
   </header>
 
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
   <main>
 
     <!-- ========== HERO ========== -->
     <section class="hero" aria-label="Willkommen">
       <div class="hero-texture" aria-hidden="true"></div>
       <div class="hero-inner">
-        <h1 class="hero-title">Tauche ein in<br/><em>Katja Brandis'</em>Welten</h1>
-        <p class="hero-sub">Erlebe magische Abenteuer mit Shapeshiftern aus Wald, Meer und Lüften.</p>
+        <h1 class="hero-title">Tauche ein in<br /><em>Katja Brandis'</em>Welten</h1>
+        <p class="hero-sub">Erlebe magische Abenteuer mit Wandlern aus Wald, Meer und Lüften.</p>
         <div class="hero-series" aria-hidden="true">
           <span class="hero-series__item hero-series__item--wood">Woodwalkers</span>
           <span class="hero-series__item hero-series__item--sea">Seawalkers</span>
@@ -62,7 +77,10 @@
       </div>
       <div class="hero-scroll-hint" aria-hidden="true">
         <span>Scrollen</span>
-        <svg width="16" height="24" viewBox="0 0 16 24"><rect x="5" y="0" width="6" height="14" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="8" cy="5" r="2" fill="currentColor" class="scroll-dot"/></svg>
+        <svg width="16" height="24" viewBox="0 0 16 24">
+          <rect x="5" y="0" width="6" height="14" rx="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+          <circle cx="8" cy="5" r="2" fill="currentColor" class="scroll-dot" />
+        </svg>
       </div>
     </section>
 
@@ -79,22 +97,23 @@
 
           <li class="product-card" role="listitem">
             <article>
-              <a href="#" class="product-card__image-link" aria-label="Carags Verwandlung – Produktseite">
-                <div class="product-card__cover" aria-hidden="true">
-                  <div class="cover-placeholder cover-placeholder--wood">
-                    <span>Woodwalkers</span>
-                  </div>
-                </div>
-              </a>
+              <div class="product-card__cover" aria-hidden="true">
+                <img src="../img/carags-transformation.jpeg" alt="Carags Verwandlung Cover" class="product-cover-image" loading="lazy" />
+              </div>
               <div class="product-card__body">
                 <h3 class="product-card__title">Carags Verwandlung</h3>
                 <p class="product-card__series">Woodwalkers · Band 1</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
-                  <button class="btn btn--cart" aria-label="Carags Verwandlung in den Warenkorb legen">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                    Ansehen
-                  </button>
+                  <span class="product-card__price" aria-label="Preis: 14,99 CHF">14,99 CHF</span>
+                  <a href="../html/product-detail/woodwalkers/carags-transformation-detail.html" class="btn btn--cart" aria-label="Carags Verwandlung ansehen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    Kaufen
+                  </a>
                 </div>
               </div>
             </article>
@@ -102,22 +121,23 @@
 
           <li class="product-card" role="listitem">
             <article>
-              <a href="#" class="product-card__image-link" aria-label="Verwandlung im Sturm – Produktseite">
-                <div class="product-card__cover" aria-hidden="true">
-                  <div class="cover-placeholder cover-placeholder--sea">
-                    <span>Seawalkers</span>
-                  </div>
-                </div>
-              </a>
+              <div class="product-card__cover" aria-hidden="true">
+                <img src="../img/dangerous-creatures.jpeg" alt="Gefährliche Gestalten Cover" class="product-cover-image" loading="lazy" />
+              </div>
               <div class="product-card__body">
-                <h3 class="product-card__title">Verwandlung im Sturm</h3>
+                <h3 class="product-card__title">Gefährliche Gestalten</h3>
                 <p class="product-card__series">Seawalkers · Band 1</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
-                  <button class="btn btn--cart" aria-label="Verwandlung im Sturm in den Warenkorb legen">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                    Ansehen
-                  </button>
+                  <span class="product-card__price" aria-label="Preis: 14,99 CHF">14,99 CHF</span>
+                  <a href="../html/product-detail/seawalkers/dangerous-creatures-detail.html" class="btn btn--cart" aria-label="Gefährliche Gestalten ansehen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    Kaufen
+                  </a>
                 </div>
               </div>
             </article>
@@ -125,22 +145,23 @@
 
           <li class="product-card" role="listitem">
             <article>
-              <a href="#" class="product-card__image-link" aria-label="Sturm und Flügel – Produktseite">
-                <div class="product-card__cover" aria-hidden="true">
-                  <div class="cover-placeholder cover-placeholder--wind">
-                    <span>Windwalkers</span>
-                  </div>
-                </div>
-              </a>
+              <div class="product-card__cover" aria-hidden="true">
+                <img src="../img/hidden-wings.png" alt="Verborgene Flügel Cover" class="product-cover-image" loading="lazy" />
+              </div>
               <div class="product-card__body">
-                <h3 class="product-card__title">Sturm und Flügel</h3>
+                <h3 class="product-card__title">Verborgene Flügel</h3>
                 <p class="product-card__series">Windwalkers · Band 1</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price" aria-label="Preis: 14,99 Euro">14,99 €</span>
-                  <button class="btn btn--cart" aria-label="Sturm und Flügel in den Warenkorb legen">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-                    Ansehen
-                  </button>
+                  <span class="product-card__price" aria-label="Preis: 14,99 CHF">14,99 CHF</span>
+                  <a href="../html/product-detail/windwalkers/hidden-wings-detail.html" class="btn btn--cart" aria-label="Verborgene Flügel ansehen">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                      <line x1="3" y1="6" x2="21" y2="6" />
+                      <path d="M16 10a4 4 0 01-8 0" />
+                    </svg>
+                    Kaufen
+                  </a>
                 </div>
               </div>
             </article>
@@ -149,7 +170,7 @@
         </ul>
 
         <div class="section-footer">
-          <a href="produkte.html" class="btn btn--outline">Alle Produkte anzeigen</a>
+          <a href="products.html" class="btn btn--outline">Alle Produkte anzeigen</a>
         </div>
       </div>
     </section>
@@ -166,19 +187,22 @@
         <ul class="quotes-grid" role="list">
           <li class="quote-card" role="listitem">
             <blockquote>
-              <p>«Ich habe die ganze Nacht durchgelesen – Carag ist mein absoluter Lieblingscharakter und die Welt der Woodwalkers fühlt sich so real an!»</p>
+              <p>«Ich habe die ganze Nacht durchgelesen – Carag ist mein absoluter Lieblingscharakter und die Welt der
+                Woodwalkers fühlt sich so real an!»</p>
               <footer><cite>— Lena, 12</cite></footer>
             </blockquote>
           </li>
           <li class="quote-card" role="listitem">
             <blockquote>
-              <p>«Die Seawalkers-Bücher haben mir das Meer noch näher gebracht. Tiago ist ein echtes Vorbild – mutig, loyal und immer für seine Freunde da.»</p>
+              <p>«Die Seawalkers-Bücher haben mir das Meer noch näher gebracht. Tiago ist ein echtes Vorbild – mutig,
+                loyal und immer für seine Freunde da.»</p>
               <footer><cite>— Finn, 11</cite></footer>
             </blockquote>
           </li>
           <li class="quote-card" role="listitem">
             <blockquote>
-              <p>«Spannend, magisch und voller Abenteuer – Windwalkers ist meine neue Lieblingsserie. Ich kann es kaum erwarten, dass der nächste Band erscheint!»</p>
+              <p>«Spannend, magisch und voller Abenteuer – Windwalkers ist meine neue Lieblingsserie. Ich kann es kaum
+                erwarten, dass der nächste Band erscheint!»</p>
               <footer><cite>— Mia, 13</cite></footer>
             </blockquote>
           </li>
@@ -200,8 +224,10 @@
             <article>
               <div class="world-card__icon" aria-hidden="true">🌲</div>
               <h3 class="world-card__title">Woodwalkers</h3>
-              <p class="world-card__desc">Carag und seine Freunde können sich in Tiere verwandeln. Doch in den tiefen Wäldern lauern Gefahren …</p>
-              <a href="produkte.html?filter=woodwalkers" class="world-card__link" aria-label="Woodwalkers entdecken">Entdecken →</a>
+              <p class="world-card__desc">Carag und seine Freunde können sich in Tiere verwandeln. Doch in den tiefen
+                Wäldern lauern Gefahren …</p>
+              <a href="products.html?filter=woodwalkers" class="world-card__link"
+                aria-label="Woodwalkers entdecken">Entdecken →</a>
             </article>
           </li>
 
@@ -209,8 +235,10 @@
             <article>
               <div class="world-card__icon" aria-hidden="true">🌊</div>
               <h3 class="world-card__title">Seawalkers</h3>
-              <p class="world-card__desc">Tiago kann sich in Meerestiere verwandeln. Die Tiefen des Ozeans halten seine grössten Abenteuer bereit.</p>
-              <a href="produkte.html?filter=seawalkers" class="world-card__link" aria-label="Seawalkers entdecken">Entdecken →</a>
+              <p class="world-card__desc">Tiago kann sich in Meerestiere verwandeln. Die Tiefen des Ozeans halten seine
+                grössten Abenteuer bereit.</p>
+              <a href="products.html?filter=seawalkers" class="world-card__link"
+                aria-label="Seawalkers entdecken">Entdecken →</a>
             </article>
           </li>
 
@@ -218,8 +246,10 @@
             <article>
               <div class="world-card__icon" aria-hidden="true">🦅</div>
               <h3 class="world-card__title">Windwalkers</h3>
-              <p class="world-card__desc">Hoch über den Wolken kämpft eine neue Generation von Shapeshiftern um Freiheit und Identität.</p>
-              <a href="produkte.html?filter=windwalkers" class="world-card__link" aria-label="Windwalkers entdecken">Entdecken →</a>
+              <p class="world-card__desc">Hoch über den Wolken kämpft eine neue Generation von Gestaltwandler um
+                Freiheit und Identität.</p>
+              <a href="products.html?filter=windwalkers" class="world-card__link"
+                aria-label="Windwalkers entdecken">Entdecken →</a>
             </article>
           </li>
         </ul>
@@ -236,8 +266,11 @@
           <div class="author-strip__text">
             <p class="section-kicker">Über die Autorin</p>
             <h2 id="author-heading">Katja Brandis</h2>
-            <p>Katja Brandis ist eine der erfolgreichsten deutschen Kinderbuchautorinnen. Mit ihren Shapeshifter-Reihen – Woodwalkers, Seawalkers und Windwalkers – hat sie Millionen junger Leserinnen und Leser in magische Welten entführt. Ihre Bücher verbinden Abenteuer, Freundschaft und den tiefen Respekt vor der Natur.</p>
-            <a href="kontakt.html" class="btn btn--outline">Kontakt aufnehmen</a>
+            <p>Katja Brandis ist eine der erfolgreichsten deutschen Kinderbuchautorinnen. Mit ihren
+              Gestaltwandler-Reihen – Woodwalkers, Seawalkers und Windwalkers – hat sie Millionen junger Leserinnen und
+              Leser in magische Welten entführt. Ihre Bücher verbinden Abenteuer, Freundschaft und den tiefen Respekt
+              vor der Natur.</p>
+            <a href="contact.html" class="btn btn--outline">Kontakt aufnehmen</a>
           </div>
         </div>
       </div>
@@ -262,7 +295,8 @@
               </div>
               <div class="form-field">
                 <label for="nl-email">E-Mail</label>
-                <input type="email" id="nl-email" name="email" placeholder="deine@email.de" autocomplete="email" required />
+                <input type="email" id="nl-email" name="email" placeholder="deine@email.de" autocomplete="email"
+                  required />
               </div>
               <button type="button" class="btn btn--primary" id="nl-submit">Abonnieren</button>
             </div>
@@ -277,6 +311,38 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+    <aside class="cart-sidebar" aria-label="Warenkorb" aria-hidden="true">
+    <div class="cart-sidebar__header">
+      <h2 class="cart-sidebar__title">Warenkorb</h2>
+      <button class="cart-sidebar__close" aria-label="Warenkorb schließen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <ul class="cart-sidebar__items" role="list"></ul>
+    <p class="cart-sidebar__empty">Dein Warenkorb ist leer.</p>
+    <div class="cart-sidebar__footer">
+      <div class="cart-sidebar__total">
+        <span>Gesamt</span>
+        <span class="cart-sidebar__total-price">0,00 CHF</span>
+      </div>
+      <button class="btn btn--primary cart-sidebar__checkout">Zur Kasse</button>
+    </div>
+  </aside>
+  <div class="cart-backdrop" aria-hidden="true"></div>
+<script src="../js/main.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+

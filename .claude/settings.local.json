@@ -4,7 +4,9 @@
       "Bash(for f:*)",
       "Bash(do echo:*)",
       "Read(//c/Users/nicola.lanelli/Documents/Github/M293/Webshop/html/**)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(grep -n \"#[0-9a-fA-F]\\\\{3,6\\\\}\\\\|rgba\\\\|rgb\\(\" \"c:\\\\Users\\\\nicola.lanelli\\\\Documents\\\\Schule\\\\TBZ\\\\M293\\\\Webshop\\\\css\\\\main.css\")",
+      "Bash(grep -n \"#[0-9a-fA-F]\\\\{3,6\\\\}\\\\|rgba\\\\|rgb\\(\" \"c:\\\\Users\\\\nicola.lanelli\\\\Documents\\\\Schule\\\\TBZ\\\\M293\\\\Webshop\\\\css\\\\index.css\")"
     ]
   }
 }

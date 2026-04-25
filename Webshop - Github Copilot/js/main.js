@@ -31,12 +31,12 @@ if (newsletterForm && message) {
     const email = String(formData.get('email') || '').trim();
 
     if (!firstName || !email) {
-      message.textContent = 'Bitte Vorname und E-Mail ausfuellen.';
+      message.textContent = 'Bitte Vorname und E-Mail ausfüllen.';
       return;
     }
 
     if (!email.includes('@')) {
-      message.textContent = 'Bitte eine gueltige E-Mail-Adresse angeben.';
+      message.textContent = 'Bitte eine gültige E-Mail-Adresse angeben.';
       return;
     }
 

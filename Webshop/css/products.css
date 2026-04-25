@@ -1,0 +1,119 @@
+/* =============================================================
+   PRODUKTE GROUP STYLES
+   ============================================================= */
+
+.page-hero {
+  padding: var(--space-xl) 0;
+  background:
+    radial-gradient(
+      ellipse at 60% 50%,
+      rgba(61, 90, 42, 0.08) 0%,
+      transparent 60%
+    ),
+    var(--clr-page-bg);
+  border-bottom: 1px solid var(--clr-rule);
+}
+.page-hero__kicker {
+  font-family: var(--ff-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: var(--space-sm);
+}
+.page-hero__title {
+  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  font-weight: 900;
+  color: var(--clr-bark);
+  line-height: 1.1;
+}
+.page-hero__sub {
+  font-family: var(--ff-ui);
+  font-size: 0.95rem;
+  color: var(--clr-muted);
+  max-width: 50ch;
+  margin-top: var(--space-sm);
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: var(--space-lg) 0;
+}
+.filter-pill {
+  font-family: var(--ff-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 1.1rem;
+  border-radius: 20px;
+  border: 1.5px solid var(--clr-rule);
+  background: transparent;
+  color: var(--clr-muted);
+  cursor: pointer;
+  transition:
+    background var(--trans-base),
+    color var(--trans-base),
+    border-color var(--trans-base);
+  white-space: nowrap;
+}
+.filter-pill:hover {
+  border-color: var(--clr-moss);
+  color: var(--clr-moss);
+}
+.filter-pill.active {
+  background: var(--clr-moss);
+  border-color: var(--clr-moss);
+  color: var(--clr-white);
+}
+.filter-pill[data-filter="woodwalkers"].active {
+  background: var(--clr-moss);
+  border-color: var(--clr-moss);
+}
+.filter-pill[data-filter="seawalkers"].active {
+  background: var(--clr-tide);
+  border-color: var(--clr-tide);
+}
+.filter-pill[data-filter="windwalkers"].active {
+  background: var(--clr-gust);
+  border-color: var(--clr-gust);
+}
+
+.product-grid[data-filter="woodwalkers"]
+  .product-card:not([data-category~="woodwalkers"]),
+.product-grid[data-filter="seawalkers"]
+  .product-card:not([data-category~="seawalkers"]),
+.product-grid[data-filter="windwalkers"]
+  .product-card:not([data-category~="windwalkers"]) {
+  display: none;
+}
+
+.product-grid--4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 930px) {
+  .product-grid--4col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 710px) {
+  .product-grid--4col {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .product-grid--4col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-grid--4col .product-card:nth-child(7) {
+  transition-delay: 0.47s;
+}
+.product-grid--4col .product-card:nth-child(8) {
+  transition-delay: 0.54s;
+}
